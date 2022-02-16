@@ -1,7 +1,12 @@
 const h1 = document.querySelector(".hello > h1");
 
 
-function handleWindowResize() {
-    document.body.style.background = "tomato";
+function handleTitleClick() {
+    if (h1.style.color === "blue") {
+        h1.style.color = "tomato";
+    } else {
+        h1.style.color = "blue";
+    }
 }
-window.addEventListener("resize", handleWindowResize);
+
+h1.addEventListener("click", handleTitleClick);
