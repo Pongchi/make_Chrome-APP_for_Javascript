@@ -1,4 +1,8 @@
-const amIFat = false;   // or true
-const box = null;
+function sayHello(name) {
+    console.log("Hello! " + name);
+}
 
-console.log(amIFat);
+sayHello("Pongchi");
+sayHello("Nico");
+sayHello("Jeong");
+sayHello("Frog");
