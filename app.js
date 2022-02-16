@@ -1,3 +1,3 @@
-const title = document.getElementsByTagName("hello");
+const title = document.querySelector(".title");
 
 console.log(title);
