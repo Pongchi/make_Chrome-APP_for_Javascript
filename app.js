@@ -1,12 +1,7 @@
-const hello = document.querySelector(".hello > h1");
+const h1 = document.querySelector(".hello > h1");
 
-function handleMouseEnter() {
-    hello.innerText = "Mouse is here!";
+
+function handleWindowResize() {
+    document.body.style.background = "tomato";
 }
-
-function handleMouseLeave() {
-    hello.innerText = "Mouse is gone!";
-}
-
-hello.addEventListener("mouseenter", handleMouseEnter);
-hello.addEventListener("mouseleave", handleMouseLeave);
+window.addEventListener("resize", handleWindowResize);
