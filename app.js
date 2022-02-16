@@ -1,3 +1,7 @@
 const hello = document.querySelector(".hello > h1");
 
-hello.style.color = "blue";
+function handleHelloClick() {
+    console.log("title was clicked!");
+}
+
+hello.addEventListener("click", handleHelloClick);
