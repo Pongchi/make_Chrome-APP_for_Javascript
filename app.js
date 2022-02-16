@@ -1,5 +1,3 @@
-const title = document.querySelector(".title");
-const titles = document.querySelectorAll(".title");
+const hello = document.querySelector(".hello > h1");
 
-console.log(title);
-console.log(titles);
+hello.style.color = "blue";
