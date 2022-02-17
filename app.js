@@ -1,8 +1,9 @@
-const h1 = document.querySelector("div.hello:first-child h1.sexy-font");
+const loginForm = document.querySelector("#login-form");
+const loginButton = loginForm.querySelector("#login-form button");
 
-
-function handleClick() {
-    this.classList.toggle("clicked");
+function onLoginSubmit(event) {
+    event.preventDefault();
+    console.log(evnet)
 }
 
-h1.addEventListener("click", handleClick);
+loginForm.addEventListener("submit", onLoginSubmit);
