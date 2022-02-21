@@ -2,6 +2,8 @@ const toDoForm = document.getElementById("todo-form");
 const toDoInput = toDoForm.querySelector("#todo-form input");
 const toDoList = document.getElementById("todo-list");
 
+const toDos = []
+
 function deleteToDo(e) {
     const li = e.target.parentElement;
     li.remove();
@@ -30,6 +32,7 @@ function handleToDoSumbit(e) {
     toDoInput.value = "";
 
     paintToDo(newTodo);
+    toDos.push(newTodo);
 }
 
 toDoForm.addEventListener("submit", handleToDoSumbit);
