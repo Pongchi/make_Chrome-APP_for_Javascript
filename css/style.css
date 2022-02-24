@@ -10,3 +10,35 @@
     height: 100%;
     z-index: -1;
 }
+
+#clock {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 100px;
+}
+
+#greeting {
+    text-align: center;
+}
+
+#todo-form {
+    text-align: center;
+}
+
+#todo-list {
+    text-align: center;
+}
+
+#quote {
+    position: absolute;
+    bottom: 20px;
+    font-size: 20px;
+    color: #BFFFF0;
+}
+
+#weather {
+    text-align: right;
+    margin-right: 30px;
+    font-size: 20px;
+
+}
